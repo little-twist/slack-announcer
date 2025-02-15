@@ -6,16 +6,20 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "check-types": "tsc --noEmit",
-    "lint": "biome lint --write"
+    "lint": "biome lint --write",
+    "dev": "ts-node src/main.tsx"
   },
   "keywords": [],
   "author": "Kota Nonaka",
   "license": "ISC",
   "dependencies": {
     "@slack/bolt": "^4.2.0",
+    "dotenv": "^16.4.7",
+    "jsx-slack": "^6.1.2",
     "typescript": "5.7.3"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.9.4"
+    "@biomejs/biome": "1.9.4",
+    "ts-node": "^10.9.2"
   }
 }
